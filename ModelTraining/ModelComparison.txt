@@ -1,0 +1,81 @@
+Logistic Regression:
+	None:
+		Chi_feat: 3500
+			Acc:0.6688488967533746	C:1 solver:lbfgs 
+		MI_feat: 3500
+			Acc:0.7715321447127573	C:1 solver:lbfgs 
+	MinMax:
+		Chi_feat: 3500
+			Acc:0.6692340882086786	C:1 solver:lbfgs 
+		MI_feat: 3500
+			Acc:0.7711471179395633	C:1 solver:lbfgs 
+	log(x+1):
+		Chi_feat: 3500
+			Acc:0.6688488967533746	C:1 solver:lbfgs 
+		MI_feat: 3500
+			Acc:0.7706336391205646	C:1 solver:lbfgs 
+
+
+Random Forest:
+	None:
+		Chi_feat: 3500
+			Acc:0.6271326127393140	bootstrap:True criterion:entropy n_estimators:200 
+		MI_feat: 3500
+			Acc:0.7253267910620431	bootstrap:True criterion:gini n_estimators:200 
+	MinMax:
+		Chi_feat: 3500
+			Acc:0.6281588293078164	bootstrap:True criterion:entropy n_estimators:200 
+		MI_feat: 3500
+			Acc:0.7236569144665823	bootstrap:True criterion:gini n_estimators:200 
+	log(x+1):
+		Chi_feat: 3500
+			Acc:0.6305980183801703	bootstrap:True criterion:entropy n_estimators:200 
+		MI_feat: 3500
+			Acc:0.7263531723126555	bootstrap:True criterion:gini n_estimators:200 
+
+
+Linear SVM:
+	None:
+		Chi_feat: 3500
+			Acc:0.6599930339467467	C:1 loss:squared_hinge max_iter:10000 penalty:l2 
+		MI_feat: 3500
+			Acc:0.7698637502562866	C:0.1 loss:squared_hinge max_iter:10000 penalty:l2 
+	MinMax:
+		Chi_feat: 3500
+			Acc:0.6599931162878017	C:1 loss:squared_hinge max_iter:10000 penalty:l2 
+		MI_feat: 3500
+			Acc:0.7694787234830925	C:0.1 loss:squared_hinge max_iter:10000 penalty:l2 
+	log(x+1):
+		Chi_feat: 3500
+			Acc:0.6602497733562460	C:1 loss:squared_hinge max_iter:10000 penalty:l2 
+		MI_feat: 3500
+			Acc:0.7694787234830925	C:0.1 loss:squared_hinge max_iter:10000 penalty:l2 
+
+
+All features
+	Logistic Regression:
+		None:
+			Acc:0.7708907078942839	C:1 solver:lbfgs 
+		MinMax:
+			Acc:0.7702489417115905	C:1 solver:lbfgs 
+		log(x+1):
+			Acc:0.7707624205305892	C:1 solver:lbfgs 
+	Random Forest:
+		None:
+			Acc:0.7213472478737482	bootstrap:True criterion:gini n_estimators:200 
+		MinMax:
+			Acc:0.7244268856719154	bootstrap:True criterion:gini n_estimators:200 
+		log(x+1):
+			Acc:0.7244275444003554	bootstrap:True criterion:gini n_estimators:200 
+	Linear SVM:
+		None:
+			Acc:0.7696072578699522	C:0.1 loss:squared_hinge max_iter:10000 penalty:l2 
+		MinMax:
+			Acc:0.7697356275747018	C:0.1 loss:hinge max_iter:10000 penalty:l2 
+		log(x+1):
+			Acc:0.7690937790509536	C:0.1 loss:hinge max_iter:10000 penalty:l2 
+
+
+Best Preforming Model:
+Accuracy: 0.7715321447127573
+Logistic Regression is the winner with 3500 features removed using Mutual Importance, None feature transformation, and the following params:{'C': 1, 'solver': 'lbfgs'}

@@ -1,0 +1,14 @@
+============================================================
+FINAL IMPROVEMENT RESULTS
+============================================================
+Pipeline             Raw Acc: 77.65%   Bal Acc: 69.12%
+Balanced LR          Raw Acc: 73.93%   Bal Acc: 73.62%  
+Stacking LR+SVM      Raw Acc: 75.63%   Bal Acc: 73.85%
+
+THROUGHPUT RESULTS
+Batch 1    Time: 0.24 ms   Throughput: 4132 samples/sec
+Batch 10   Time: 0.58 ms   Throughput: 17126 samples/sec  
+Batch 100  Time: 1.99 ms   Throughput: 50225 samples/sec  
+Batch 1000 Time: 19.63 ms   Throughput: 50949 samples/sec 
+
+Best Balanced Accuracy: 73.85% 

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../buildMultiTargeting/CDTS_PROJECT.props" />
+</Project>
