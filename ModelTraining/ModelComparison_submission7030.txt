@@ -1,0 +1,15 @@
+============================================================
+FINAL RESULTS
+Train/Test Split: 70/30, stratified, random_state=42
+============================================================
+Pipeline LR          Accuracy: 76.90%   Balanced Accuracy: 66.98%
+Balanced LR          Accuracy: 73.18%   Balanced Accuracy: 73.26%
+Stacking LR + SVM    Accuracy: 74.59%   Balanced Accuracy: 73.48%
+
+PREDICTION SPEED
+Batch size 1    Time: 0.22 ms   Samples/sec: 4590
+Batch size 10   Time: 0.57 ms   Samples/sec: 17429
+Batch size 100  Time: 1.78 ms   Samples/sec: 56190
+Batch size 1000 Time: 20.21 ms   Samples/sec: 49475
+
+Best balanced accuracy: 73.48%

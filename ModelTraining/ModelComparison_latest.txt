@@ -1,0 +1,84 @@
+Train/Test Split: 70/30, stratified, random_state=42
+
+Logistic Regression:
+	None:
+		Chi_feat: 3500
+			CV Acc:0.1802679134536954	Test Acc:0.1804961505560308	Balanced Acc:0.0454545454545455	C:0.1 solver:lbfgs 
+		MI_feat: 3500
+			CV Acc:0.7705809836947838	Test Acc:0.7673224978614200	Balanced Acc:0.6697859598096995	C:1 solver:lbfgs 
+	MinMax:
+		Chi_feat: 3500
+			CV Acc:0.1802679134536954	Test Acc:0.1804961505560308	Balanced Acc:0.0454545454545455	C:0.1 solver:lbfgs 
+		MI_feat: 3500
+			CV Acc:0.7703976656379552	Test Acc:0.7673224978614200	Balanced Acc:0.6697859598096995	C:1 solver:lbfgs 
+	log(x+1):
+		Chi_feat: 3500
+			CV Acc:0.1802679134536954	Test Acc:0.1804961505560308	Balanced Acc:0.0454545454545455	C:0.1 solver:lbfgs 
+		MI_feat: 3500
+			CV Acc:0.7702143475811266	Test Acc:0.7668947818648417	Balanced Acc:0.6694945845183242	C:1 solver:lbfgs 
+
+
+Random Forest:
+	None:
+		Chi_feat: 3500
+			CV Acc:0.1802679134536954	Test Acc:0.1804961505560308	Balanced Acc:0.0454545454545455	bootstrap:True criterion:gini n_estimators:100 
+		MI_feat: 3500
+			CV Acc:0.7184972964791161	Test Acc:0.7284003421727973	Balanced Acc:0.5915979950582204	bootstrap:True criterion:gini n_estimators:200 
+	MinMax:
+		Chi_feat: 3500
+			CV Acc:0.1802679134536954	Test Acc:0.1804961505560308	Balanced Acc:0.0454545454545455	bootstrap:True criterion:gini n_estimators:100 
+		MI_feat: 3500
+			CV Acc:0.7219848804648542	Test Acc:0.7288280581693756	Balanced Acc:0.5852728441556925	bootstrap:True criterion:gini n_estimators:200 
+	log(x+1):
+		Chi_feat: 3500
+			CV Acc:0.1802679134536954	Test Acc:0.1804961505560308	Balanced Acc:0.0454545454545455	bootstrap:True criterion:gini n_estimators:100 
+		MI_feat: 3500
+			CV Acc:0.7227176481470581	Test Acc:0.7258340461933276	Balanced Acc:0.5852220835342821	bootstrap:True criterion:gini n_estimators:200 
+
+
+Linear SVM:
+	None:
+		Chi_feat: 3500
+			CV Acc:0.1802679134536954	Test Acc:0.1804961505560308	Balanced Acc:0.0454545454545455	C:0.1 loss:squared_hinge max_iter:10000 penalty:l2 
+		MI_feat: 3500
+			CV Acc:0.7722318552964623	Test Acc:0.7677502138579982	Balanced Acc:0.6872938776194101	C:0.1 loss:squared_hinge max_iter:10000 penalty:l2 
+	MinMax:
+		Chi_feat: 3500
+			CV Acc:0.1802679134536954	Test Acc:0.1804961505560308	Balanced Acc:0.0454545454545455	C:0.1 loss:squared_hinge max_iter:10000 penalty:l2 
+		MI_feat: 3500
+			CV Acc:0.7722318552964623	Test Acc:0.7677502138579982	Balanced Acc:0.6872938776194101	C:0.1 loss:squared_hinge max_iter:10000 penalty:l2 
+	log(x+1):
+		Chi_feat: 3500
+			CV Acc:0.1802679134536954	Test Acc:0.1804961505560308	Balanced Acc:0.0454545454545455	C:0.1 loss:squared_hinge max_iter:10000 penalty:l2 
+		MI_feat: 3500
+			CV Acc:0.7720485372396337	Test Acc:0.7677502138579982	Balanced Acc:0.6877600780856105	C:0.1 loss:squared_hinge max_iter:10000 penalty:l2 
+
+
+All features
+	Logistic Regression:
+		None:
+			CV Acc:0.7698470387406554	Test Acc:0.7690333618477331	Balanced Acc:0.6708162628639293	C:1 solver:lbfgs 
+		MinMax:
+			CV Acc:0.7698472069223589	Test Acc:0.7694610778443114	Balanced Acc:0.6711076381553045	C:1 solver:lbfgs 
+		log(x+1):
+			CV Acc:0.7700305249791876	Test Acc:0.7690333618477331	Balanced Acc:0.6712846033746426	C:1 solver:lbfgs 
+	Random Forest:
+		None:
+			CV Acc:0.7219813486490805	Test Acc:0.7215568862275449	Balanced Acc:0.5732678931978458	bootstrap:True criterion:gini n_estimators:200 
+		MinMax:
+			CV Acc:0.7183159966027295	Test Acc:0.7232677502138580	Balanced Acc:0.5850958441513546	bootstrap:True criterion:gini n_estimators:200 
+		log(x+1):
+			CV Acc:0.7157495438071292	Test Acc:0.7207014542343884	Balanced Acc:0.5779617694137037	bootstrap:True criterion:gini n_estimators:200 
+	Linear SVM:
+		None:
+			CV Acc:0.7731486137623088	Test Acc:0.7686056458511549	Balanced Acc:0.6896238573714096	C:0.1 loss:squared_hinge max_iter:10000 penalty:l2 
+		MinMax:
+			CV Acc:0.7729652957054802	Test Acc:0.7677502138579982	Balanced Acc:0.6890567731509507	C:0.1 loss:squared_hinge max_iter:10000 penalty:l2 
+		log(x+1):
+			CV Acc:0.7727818094669481	Test Acc:0.7686056458511549	Balanced Acc:0.6890885344386362	C:0.1 loss:squared_hinge max_iter:10000 penalty:l2 
+
+
+Best Performing Model:
+Test Accuracy: 0.7694610778443114
+Balanced Accuracy: 0.6711076381553045
+Logistic Regression is the winner using all features, MinMax feature transformation, and the following params:{'C': 1, 'solver': 'lbfgs'}
